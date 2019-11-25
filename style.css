@@ -1,7 +1,17 @@
-body, html, section {
+body, html {
     width: 100%;
     height: 100%;
+    margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    height: 50%;
+    min-height: 20rem;
+}
+
+#inputs {
+    background-color: #3498db;
 }
 
 .flexy {
@@ -15,7 +25,7 @@ h1 {
     font-size: 3rem;
 }
 
-button {
+.deg_btns button {
     background: none;
     border: none;
     border: 1px solid black;
@@ -26,32 +36,74 @@ button {
     width: 2rem;
     height: 2rem;
     transition: .4s ease;
+    border-radius: 100%;
+    cursor: pointer;
 }
 
-button:hover {
+.deg_btns button:disabled {
+    color: #3498db;
+    border-color: #3498db;
+}
+
+.deg_btns button:hover:enabled {
     background-color: #187dec;
     border-color: #187dec;
     color: white;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0;
-    color: purple;
+    color: #3498db;
 }
 
 h5 {
     margin: 0;
     font-weight: 300;
-    font-size: 1.5rem;
-    color: #888;
+    font-size: 1.25rem;
+    color: #95a5a6;
 }
 
 h4 {
     margin: 0;
-    margin-top: 1rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #34495e;
 }
 
 img {
     height: 15rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputs button {
+    background: #ecf0f1;
+    border: none;
+    border-bottom: 3px solid #bdc3c7;
+    border-radius: 10px;
+    padding: .8rem;
+    margin: .8rem;
+    color: #34495e;
+    font-weight: 600;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+#inputs input {
+    background: white;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem;
+    margin: .5rem;
+    font-size: 1rem;
+}
+
+#inputs input:focus {
+    outline-color: #222;
 }
