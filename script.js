@@ -48,7 +48,7 @@ function init() {
         if (!imgs.includes(new_img.toLowerCase())) {
             image.src = "images/cloudy.svg";
         } else {
-            image.src = "images/" + new_img + ".svg";
+            image.src = "images/" + new_img.toLowerCase() + ".svg";
         }
     }
 
